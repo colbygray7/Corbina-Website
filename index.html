@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <title>Corbina - Unlock Your Tech Intelligence</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%230066cc'/%3E%3Cpath fill='white' d='M38 100 C38 68 60 44 92 40 C112 37 135 44 152 60 C163 71 168 85 166 100 C168 115 163 129 152 140 C135 156 112 163 92 160 C60 156 38 132 38 100Z'/%3E%3Cpath fill='white' d='M38 100 L12 76 L22 100 L12 124Z'/%3E%3Ccircle cx='148' cy='88' r='9' fill='%230066cc'/%3E%3Ccircle cx='151' cy='85' r='3.5' fill='white'/%3E%3Cpath fill='white' d='M95 40 C100 22 118 18 126 38 L110 42Z'/%3E%3Cpath fill='white' d='M125 108 C118 128 105 138 96 130 C102 118 114 112 125 108Z'/%3E%3Cpath fill='%230066cc' d='M162 100 C165 95 170 97 168 103 C167 107 162 109 160 105Z'/%3E%3Cpath fill='white' d='M155 100 C158 106 156 114 150 116 C148 110 150 103 155 100Z'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body class="bg-zinc-900 min-h-screen m-0">
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex flex-col rounded-none md:rounded-[2.5rem] mx-0 md:mx-4 my-0 md:my-4 overflow-hidden relative">
+
+        <!-- Realistic Animated Fish Background -->
+        <div id="fish-container">
+            <svg class="fish-realistic" viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#1a5fa8;stop-opacity:1"/>
+                        <stop offset="30%" style="stop-color:#2e8fef;stop-opacity:1"/>
+                        <stop offset="65%" style="stop-color:#4daeff;stop-opacity:1"/>
+                        <stop offset="100%" style="stop-color:#1a5fa8;stop-opacity:1"/>
+                    </linearGradient>
+                    <linearGradient id="bellyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#3a9ff8;stop-opacity:1"/>
+                        <stop offset="100%" style="stop-color:#cce8ff;stop-opacity:0.9"/>
+                    </linearGradient>
+                    <linearGradient id="finGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#0d4a8a;stop-opacity:0.9"/>
+                        <stop offset="100%" style="stop-color:#1e7ad4;stop-opacity:0.7"/>
+                    </linearGradient>
+                    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#0a3a70;stop-opacity:0.8"/>
+                        <stop offset="100%" style="stop-color:#1e6cc8;stop-opacity:0.9"/>
+                    </linearGradient>
+                    <radialGradient id="eyeGrad" cx="40%" cy="35%" r="60%">
+                        <stop offset="0%" style="stop-color:#1a3a5c"/>
+                        <stop offset="100%" style="stop-color:#0a0a20"/>
+                    </radialGradient>
+                    <filter id="fishShadow" x="-10%" y="-10%" width="120%" height="120%">
+                        <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#001540" flood-opacity="0.5"/>
+                    </filter>
+                    <clipPath id="scaleClip">
+                        <ellipse cx="260" cy="130" rx="185" ry="78"/>
+                    </clipPath>
+                </defs>
+
+                <!-- Tail group (animated) -->
+                <g class="fish-tail-group">
+                    <!-- Tail fin - forked, detailed -->
+                    <path fill="url(#tailGrad)" d="M 95 130 Q 55 95, 15 70 Q 30 105, 38 130 Q 30 155, 15 190 Q 55 165, 95 130 Z"/>
+                    <!-- Tail rays/detail lines -->
+                    <path stroke="#1a6abf" stroke-width="1" fill="none" opacity="0.6" d="M 95 130 Q 55 95, 20 72"/>
+                    <path stroke="#1a6abf" stroke-width="1" fill="none" opacity="0.6" d="M 95 130 Q 45 108, 18 88"/>
+                    <path stroke="#1a6abf" stroke-width="1" fill="none" opacity="0.6" d="M 95 130 Q 30 130, 16 130"/>
+                    <path stroke="#1a6abf" stroke-width="1" fill="none" opacity="0.6" d="M 95 130 Q 45 152, 18 172"/>
+                    <path stroke="#1a6abf" stroke-width="1" fill="none" opacity="0.6" d="M 95 130 Q 55 165, 20 188"/>
+                    <!-- Caudal peduncle shading -->
+                    <ellipse cx="95" cy="130" rx="12" ry="20" fill="#1255a0" opacity="0.5"/>
+                </g>
+
+                <!-- Main body -->
+                <ellipse filter="url(#fishShadow)" cx="275" cy="130" rx="185" ry="78" fill="url(#bodyGrad)"/>
+
+                <!-- Belly lighter area -->
+                <ellipse cx="265" cy="148" rx="155" ry="38" fill="url(#bellyGrad)" opacity="0.55"/>
+
+                <!-- Lateral line -->
+                <path stroke="#5bc0ff" stroke-width="1.5" fill="none" opacity="0.7"
+                    d="M 105 115 Q 180 108, 260 112 Q 330 115, 390 120 Q 420 123, 445 128"/>
+
+                <!-- Scale texture (clipped to body) -->
+                <g clip-path="url(#scaleClip)" opacity="0.18">
+                    <!-- Row 1 -->
+                    <ellipse cx="130" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="158" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="186" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="214" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="242" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="270" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="298" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="326" cy="116" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="354" cy="118" rx="13" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <!-- Row 2 -->
+                    <ellipse cx="144" cy="130" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="172" cy="130" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="200" cy="130" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="228" cy="130" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="256" cy="130" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="284" cy="130" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="312" cy="131" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="340" cy="132" rx="13" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <!-- Row 3 -->
+                    <ellipse cx="130" cy="145" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="158" cy="145" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="186" cy="146" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="214" cy="146" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="242" cy="147" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="270" cy="147" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="298" cy="148" rx="13" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
+                    <ellipse cx="326" cy="149" rx="12" ry="8" fill="none" stroke="#80ccff" stroke-width="1"/>
+                </g>
+
+                <!-- Dorsal fin (spiny + soft rays) -->
+                <path fill="url(#finGrad)" d="M 140 52 Q 158 30, 178 22 Q 200 16, 225 20 Q 248 24, 265 30 Q 278 35, 282 52 L 265 58 L 248 54 L 225 50 L 200 50 L 178 54 L 162 58 Z" opacity="0.9"/>
+                <!-- Dorsal fin rays -->
+                <line x1="150" y1="56" x2="162" y2="30" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
+                <line x1="165" y1="54" x2="175" y2="24" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
+                <line x1="180" y1="52" x2="188" y2="20" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
+                <line x1="196" y1="50" x2="202" y2="17" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
+                <line x1="212" y1="50" x2="217" y2="19" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
+                <line x1="228" y1="50" x2="232" y2="22" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
+                <line x1="244" y1="52" x2="248" y2="26" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
+                <line x1="258" y1="54" x2="265" y2="31" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
+
+                <!-- Second dorsal fin (soft, smaller) -->
+                <path fill="url(#finGrad)" d="M 290 52 Q 305 36, 330 32 Q 355 30, 370 42 L 355 52 L 330 50 L 305 54 Z" opacity="0.85"/>
+
+                <!-- Anal fin -->
+                <path fill="url(#finGrad)" d="M 200 205 Q 215 220, 240 225 Q 260 228, 280 222 L 268 208 L 245 208 L 220 208 Z" opacity="0.85"/>
+
+                <!-- Pectoral fin (animated) -->
+                <g class="fish-pec-fin">
+                    <path fill="url(#finGrad)" d="M 360 118 Q 385 108, 400 118 Q 410 130, 400 148 Q 388 162, 368 158 Q 350 152, 348 140 Q 346 128, 360 118 Z" opacity="0.9"/>
+                    <!-- Pectoral rays -->
+                    <line x1="360" y1="118" x2="400" y2="118" stroke="#0a3a70" stroke-width="1" opacity="0.4"/>
+                    <line x1="355" y1="128" x2="406" y2="128" stroke="#0a3a70" stroke-width="1" opacity="0.4"/>
+                    <line x1="352" y1="138" x2="402" y2="142" stroke="#0a3a70" stroke-width="1" opacity="0.4"/>
+                    <line x1="352" y1="148" x2="394" y2="155" stroke="#0a3a70" stroke-width="1" opacity="0.4"/>
+                </g>
+
+                <!-- Pelvic fin -->
+                <path fill="url(#finGrad)" d="M 320 195 Q 340 210, 355 218 Q 338 222, 318 215 Q 308 208, 308 200 Z" opacity="0.85"/>
+
+                <!-- Head shape overlay (darker) -->
+                <ellipse cx="420" cy="130" rx="60" ry="55" fill="#1a5fa8" opacity="0.3"/>
+
+                <!-- Operculum (gill cover) -->
+                <path fill="none" stroke="#0d4a8a" stroke-width="2.5" opacity="0.7"
+                    d="M 390 88 Q 408 105, 412 130 Q 408 155, 390 172"/>
+
+                <!-- Eye -->
+                <circle cx="440" cy="116" r="16" fill="url(#eyeGrad)"/>
+                <circle cx="440" cy="116" r="13" fill="#0f1f35" opacity="0.8"/>
+                <circle cx="435" cy="111" r="5" fill="white" opacity="0.7"/>
+                <circle cx="432" cy="109" r="2" fill="white" opacity="0.9"/>
+                <!-- Eye ring -->
+                <circle cx="440" cy="116" r="16" fill="none" stroke="#4a9ee0" stroke-width="1.5" opacity="0.5"/>
+
+                <!-- Mouth - inferior (corbina style) -->
+                <path fill="#0a2a50" d="M 455 140 Q 465 148, 460 155 Q 452 158, 445 154 Q 440 149, 445 143 Z"/>
+                <path fill="none" stroke="#1e5a9a" stroke-width="1.5" opacity="0.6"
+                    d="M 445 142 Q 456 148, 450 155"/>
+
+                <!-- Chin barbel (corbina characteristic) -->
+                <path fill="none" stroke="#1e5a9a" stroke-width="2" opacity="0.7"
+                    d="M 452 156 Q 455 165, 452 170"/>
+                <circle cx="452" cy="171" r="2.5" fill="#1e5a9a" opacity="0.6"/>
+
+                <!-- Nostril -->
+                <ellipse cx="455" cy="130" rx="3.5" ry="2.5" fill="#0a2a50" opacity="0.7"/>
+
+                <!-- Body sheen highlight -->
+                <path fill="white" opacity="0.08"
+                    d="M 140 90 Q 220 72, 340 78 Q 380 82, 405 95 Q 360 85, 280 84 Q 200 83, 140 90 Z"/>
+            </svg>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="bg-zinc-800/95 backdrop-blur-sm rounded-none md:rounded-full mx-0 md:mx-8 mt-0 md:mt-6 px-4 md:px-8 py-3.5 flex items-center justify-between content-layer">
+            <!-- Logo -->
+            <div class="flex items-center gap-2 md:gap-3">
+                <svg width="36" height="36" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="md:w-11 md:h-11">
+                    <circle cx="100" cy="100" r="100" fill="#0066cc"/>
+                    <!-- Fish body -->
+                    <path fill="white" d="M38 100 C38 66 62 42 95 38 C114 35 138 42 155 58 C167 70 172 84 170 100 C172 116 167 130 155 142 C138 158 114 165 95 162 C62 158 38 134 38 100Z"/>
+                    <!-- Tail -->
+                    <path fill="white" d="M38 100 L10 74 L21 100 L10 126Z"/>
+                    <!-- Dorsal fin -->
+                    <path fill="white" d="M92 38 C98 20 116 16 126 36 L108 40Z"/>
+                    <!-- Pectoral fin -->
+                    <path fill="white" d="M122 108 C115 130 102 140 92 132 C99 120 112 113 122 108Z"/>
+                    <!-- Eye -->
+                    <circle cx="148" cy="88" r="11" fill="#0066cc"/>
+                    <circle cx="152" cy="84" r="4" fill="white"/>
+                    <!-- Mouth detail -->
+                    <path fill="#0066cc" d="M162 100 C166 95 171 97 169 104 C168 108 162 110 160 106Z"/>
+                    <!-- Chin barbel -->
+                    <path fill="white" d="M156 108 C158 118 155 124 152 122 C150 116 152 109 156 108Z"/>
+                    <!-- Lateral line -->
+                    <path fill="none" stroke="#0066cc" stroke-width="2.5" opacity="0.5"
+                        d="M 52 96 Q 90 88, 130 92 Q 150 94, 162 98"/>
+                </svg>
+                <span class="text-white text-xl md:text-2xl font-bold brand-font tracking-wide">Corbina</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center gap-6 xl:gap-8 text-white text-sm xl:text-base font-medium">
+                <a href="#how-it-works" class="hover:text-zinc-300 transition-colors">How It Works</a>
+                <a href="#technology" class="hover:text-zinc-300 transition-colors">Technology</a>
+                <a href="#reviews" class="hover:text-zinc-300 transition-colors">Reviews</a>
+                <a href="#solutions" class="hover:text-zinc-300 transition-colors">Solutions</a>
+                <span class="text-zinc-400">|</span>
+                <a href="#faqs" class="hover:text-zinc-300 transition-colors">FAQs</a>
+                <a href="#for-teams" class="hover:text-zinc-300 transition-colors">For Teams</a>
+            </div>
+
+            <!-- Desktop CTA -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#" class="text-white hover:text-zinc-300 text-sm lg:text-base font-medium">Login</a>
+                <a href="#" class="bg-brand-blue hover:bg-brand-blue-hover text-white px-4 lg:px-6 py-2 lg:py-3 rounded-full font-semibold transition-colors text-sm lg:text-base">Try Corbina</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu flex-col gap-4 bg-zinc-800/95 backdrop-blur-sm mx-0 md:mx-8 px-4 py-4 content-layer">
+            <a href="#how-it-works" class="text-white hover:text-zinc-300 py-2">How It Works</a>
+            <a href="#technology" class="text-white hover:text-zinc-300 py-2">Technology</a>
+            <a href="#reviews" class="text-white hover:text-zinc-300 py-2">Reviews</a>
+            <a href="#solutions" class="text-white hover:text-zinc-300 py-2">Solutions</a>
+            <a href="#faqs" class="text-white hover:text-zinc-300 py-2">FAQs</a>
+            <a href="#for-teams" class="text-white hover:text-zinc-300 py-2">For Teams</a>
+            <div class="border-t border-zinc-600 pt-4 mt-2 flex flex-col gap-3">
+                <a href="#" class="text-white hover:text-zinc-300">Login</a>
+                <a href="#" class="bg-brand-blue hover:bg-brand-blue-hover text-white px-6 py-3 rounded-full font-semibold transition-colors text-center">Try Corbina</a>
+            </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="flex-1 flex flex-col items-center justify-center text-center px-4 md:px-8 pb-16 md:pb-24 content-layer">
+            <h1 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-extrabold mb-4 md:mb-6 leading-[1.1] max-w-5xl tracking-tight">
+                Unlock your<br>tech intelligence
+            </h1>
+
+            <p class="text-white/80 text-base sm:text-lg md:text-xl mb-8 md:mb-10 max-w-3xl leading-relaxed px-4 font-light">
+                100+ integrations. Real-time analytics. Monitor performance of 1,000+
+                systems. All for only $17/month
+            </p>
+
+            <a href="#" class="bg-brand-blue hover:bg-brand-blue-hover text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-base md:text-lg inline-flex items-center gap-2 transition-colors mb-4 md:mb-6">
+                Join Today
+                <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
+
+            <div class="flex items-center gap-2 text-white/70 text-xs md:text-sm">
+                <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span>Enterprise ready</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section id="how-it-works" class="bg-zinc-900 py-20 md:py-28 px-4">
+        <div class="max-w-6xl mx-auto section-reveal">
+            <div class="text-center mb-14">
+                <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Process</span>
+                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">How It Works</h2>
+                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Get from zero to full visibility in minutes. No DevOps PhD required.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Step 1 -->
+                <div class="bg-zinc-800 rounded-2xl p-6 relative overflow-hidden group hover:bg-zinc-700 transition-colors">
+                    <div class="text-6xl font-extrabold text-zinc-700 group-hover:text-zinc-600 transition-colors absolute top-4 right-6 brand-font">01</div>
+                    <div class="w-12 h-12 bg-brand-blue/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">Connect</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Link your stack in one click — AWS, GitHub, Datadog, Slack, Jira, and 100+ more integrations available instantly.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-zinc-800 rounded-2xl p-6 relative overflow-hidden group hover:bg-zinc-700 transition-colors">
+                    <div class="text-6xl font-extrabold text-zinc-700 group-hover:text-zinc-600 transition-colors absolute top-4 right-6 brand-font">02</div>
+                    <div class="w-12 h-12 bg-brand-blue/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">Analyze</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Corbina's AI engine maps relationships across your systems, surfacing anomalies and patterns in real time.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-zinc-800 rounded-2xl p-6 relative overflow-hidden group hover:bg-zinc-700 transition-colors">
+                    <div class="text-6xl font-extrabold text-zinc-700 group-hover:text-zinc-600 transition-colors absolute top-4 right-6 brand-font">03</div>
+                    <div class="w-12 h-12 bg-brand-blue/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">Alert</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Get actionable alerts — not noise. Smart deduplication and root-cause correlation mean you act fast, not blind.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="bg-zinc-800 rounded-2xl p-6 relative overflow-hidden group hover:bg-zinc-700 transition-colors">
+                    <div class="text-6xl font-extrabold text-zinc-700 group-hover:text-zinc-600 transition-colors absolute top-4 right-6 brand-font">04</div>
+                    <div class="w-12 h-12 bg-brand-blue/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">Optimize</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Continuously improve. Corbina learns your baselines and suggests cost, performance, and reliability optimizations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TECHNOLOGY ===================== -->
+    <section id="technology" class="bg-zinc-800 py-20 md:py-28 px-4">
+        <div class="max-w-6xl mx-auto section-reveal">
+            <div class="text-center mb-14">
+                <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Under the Hood</span>
+                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Built Different</h2>
+                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Production-grade infrastructure intelligence powered by cutting-edge AI.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <!-- Card 1 -->
+                <div class="bg-zinc-900 rounded-2xl p-8 border border-zinc-700 hover:border-brand-blue/50 transition-colors">
+                    <div class="w-14 h-14 bg-gradient-to-br from-brand-blue to-blue-400 rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-white font-bold text-xl mb-3">Unified Data Layer</h3>
+                    <p class="text-zinc-400 leading-relaxed">Ingest metrics, logs, traces, and events from every source into a single normalized stream. Query everything with one API.</p>
+                    <div class="mt-5 flex flex-wrap gap-2">
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">OpenTelemetry</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">ClickHouse</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Apache Kafka</span>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-zinc-900 rounded-2xl p-8 border border-zinc-700 hover:border-brand-blue/50 transition-colors">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-brand-blue rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-white font-bold text-xl mb-3">AI Correlation Engine</h3>
+                    <p class="text-zinc-400 leading-relaxed">Our ML models learn the normal patterns of your infrastructure and flag deviations before they become outages — with sub-minute detection.</p>
+                    <div class="mt-5 flex flex-wrap gap-2">
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Anomaly Detection</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Root Cause AI</span>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-zinc-900 rounded-2xl p-8 border border-zinc-700 hover:border-brand-blue/50 transition-colors">
+                    <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-brand-blue rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-white font-bold text-xl mb-3">Enterprise Security</h3>
+                    <p class="text-zinc-400 leading-relaxed">SOC 2 Type II certified. Data encrypted at rest and in transit. SAML SSO, RBAC, and full audit logs included on every plan.</p>
+                    <div class="mt-5 flex flex-wrap gap-2">
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">SOC 2 Type II</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">SAML SSO</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">RBAC</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="bg-zinc-900 rounded-2xl border border-zinc-700 p-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-white brand-font mb-1">99.99%</div>
+                    <div class="text-zinc-400 text-sm">Uptime SLA</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-white brand-font mb-1">&lt;30s</div>
+                    <div class="text-zinc-400 text-sm">Alert latency</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-white brand-font mb-1">1,000+</div>
+                    <div class="text-zinc-400 text-sm">Systems monitored</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-white brand-font mb-1">100+</div>
+                    <div class="text-zinc-400 text-sm">Integrations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== REVIEWS ===================== -->
+    <section id="reviews" class="bg-zinc-900 py-20 md:py-28 px-4">
+        <div class="max-w-6xl mx-auto section-reveal">
+            <div class="text-center mb-14">
+                <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Testimonials</span>
+                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">What Teams Are Saying</h2>
+                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">From startups to Fortune 500s — engineers love Corbina.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-zinc-800 rounded-2xl p-7 flex flex-col">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-zinc-300 leading-relaxed flex-1 mb-6">"We cut our mean time to resolution by 70% in the first month. Corbina's AI surfaced a cascading database issue that would have taken us hours to find manually."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-blue/30 flex items-center justify-center text-brand-blue font-bold text-sm">SK</div>
+                        <div>
+                            <div class="text-white font-semibold text-sm">Sarah K.</div>
+                            <div class="text-zinc-500 text-xs">Staff SRE, Fintech Startup</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-zinc-800 rounded-2xl p-7 flex flex-col">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-zinc-300 leading-relaxed flex-1 mb-6">"$17/month is almost embarrassing for what you get. We replaced three separate monitoring tools with Corbina and actually get better coverage now."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/30 flex items-center justify-center text-purple-300 font-bold text-sm">MR</div>
+                        <div>
+                            <div class="text-white font-semibold text-sm">Marcus R.</div>
+                            <div class="text-zinc-500 text-xs">VP Engineering, Series B SaaS</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-zinc-800 rounded-2xl p-7 flex flex-col">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-zinc-300 leading-relaxed flex-1 mb-6">"Setup took 12 minutes. I was skeptical but now my whole platform team is on it. The Kubernetes cost optimization alone saves us $4k/month."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/30 flex items-center justify-center text-teal-300 font-bold text-sm">JL</div>
+                        <div>
+                            <div class="text-white font-semibold text-sm">Jamie L.</div>
+                            <div class="text-zinc-500 text-xs">Platform Lead, E-Commerce Scale-Up</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SOLUTIONS ===================== -->
+    <section id="solutions" class="bg-zinc-800 py-20 md:py-28 px-4">
+        <div class="max-w-6xl mx-auto section-reveal">
+            <div class="text-center mb-14">
+                <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Use Cases</span>
+                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Solutions for Every Team</h2>
+                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Whether you're shipping software or running infrastructure, Corbina has a workflow for you.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Solution 1 -->
+                <div class="bg-zinc-900 rounded-2xl p-8 border border-zinc-700 hover:border-brand-blue/40 transition-colors flex gap-5">
+                    <div class="w-12 h-12 bg-brand-blue/15 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold text-lg mb-2">Infrastructure Monitoring</h3>
+                        <p class="text-zinc-400 leading-relaxed text-sm">Monitor servers, containers, databases, and networks in a single pane of glass. Get capacity alerts before resources run out.</p>
+                        <a href="#" class="text-brand-blue text-sm font-medium mt-3 inline-flex items-center gap-1 hover:gap-2 transition-all">Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <!-- Solution 2 -->
+                <div class="bg-zinc-900 rounded-2xl p-8 border border-zinc-700 hover:border-brand-blue/40 transition-colors flex gap-5">
+                    <div class="w-12 h-12 bg-purple-500/15 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold text-lg mb-2">Application Performance</h3>
+                        <p class="text-zinc-400 leading-relaxed text-sm">Distributed tracing, error tracking, and performance profiling. Find slow queries, memory leaks, and P99 latency killers fast.</p>
+                        <a href="#" class="text-brand-blue text-sm font-medium mt-3 inline-flex items-center gap-1 hover:gap-2 transition-all">Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <!-- Solution 3 -->
+                <div class="bg-zinc-900 rounded-2xl p-8 border border-zinc-700 hover:border-brand-blue/40 transition-colors flex gap-5">
+                    <div class="w-12 h-12 bg-teal-500/15 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg class="w-6 h-6 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold text-lg mb-2">Cloud Cost Intelligence</h3>
+                        <p class="text-zinc-400 leading-relaxed text-sm">Identify waste, right-size instances, and forecast spend. Teams typically find 20–35% cost savings in their first 30 days.</p>
+                        <a href="#" class="text-brand-blue text-sm font-medium mt-3 inline-flex items-center gap-1 hover:gap-2 transition-all">Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <!-- Solution 4 -->
+                <div class="bg-zinc-900 rounded-2xl p-8 border border-zinc-700 hover:border-brand-blue/40 transition-colors flex gap-5">
+                    <div class="w-12 h-12 bg-orange-500/15 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold text-lg mb-2">Incident Management</h3>
+                        <p class="text-zinc-400 leading-relaxed text-sm">Automated incident creation, on-call routing, and post-mortem generation. Cut MTTR and keep stakeholders informed automatically.</p>
+                        <a href="#" class="text-brand-blue text-sm font-medium mt-3 inline-flex items-center gap-1 hover:gap-2 transition-all">Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FAQs ===================== -->
+    <section id="faqs" class="bg-zinc-900 py-20 md:py-28 px-4">
+        <div class="max-w-3xl mx-auto section-reveal">
+            <div class="text-center mb-14">
+                <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Questions</span>
+                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Frequently Asked</h2>
+                <p class="text-zinc-400 text-lg">Everything you need to know before you get started.</p>
+            </div>
+            <div class="flex flex-col gap-3">
+                <!-- FAQ 1 -->
+                <div class="faq-item bg-zinc-800 rounded-2xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-semibold">How long does setup take?</span>
+                        <svg class="faq-chevron w-5 h-5 text-zinc-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">Most teams are fully connected and receiving insights within 15 minutes. Our onboarding wizard walks you through each integration step by step. No DevOps expertise required.</p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="faq-item bg-zinc-800 rounded-2xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-semibold">What integrations are supported?</span>
+                        <svg class="faq-chevron w-5 h-5 text-zinc-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">Corbina supports 100+ integrations including AWS, GCP, Azure, Kubernetes, Docker, PostgreSQL, MySQL, Redis, MongoDB, GitHub, GitLab, Jira, PagerDuty, Slack, Datadog, and many more. New integrations are added weekly.</p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="faq-item bg-zinc-800 rounded-2xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-semibold">Is my data secure?</span>
+                        <svg class="faq-chevron w-5 h-5 text-zinc-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">Absolutely. Corbina is SOC 2 Type II certified. All data is encrypted in transit (TLS 1.3) and at rest (AES-256). We offer single-tenant deployment for enterprise customers who need full data isolation.</p>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="faq-item bg-zinc-800 rounded-2xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-semibold">Can I cancel anytime?</span>
+                        <svg class="faq-chevron w-5 h-5 text-zinc-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">Yes, no contracts, no lock-in. Cancel anytime from your dashboard. We'll export all your data for you free of charge — your data always belongs to you.</p>
+                    </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="faq-item bg-zinc-800 rounded-2xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-semibold">What's included in the $17/month plan?</span>
+                        <svg class="faq-chevron w-5 h-5 text-zinc-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">The $17/month plan includes full access for one user: all integrations, unlimited alerts, 13 months of data retention, AI root-cause analysis, and email support. Team and Enterprise plans are available for larger organizations with additional seats and features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOR TEAMS ===================== -->
+    <section id="for-teams" class="bg-zinc-800 py-20 md:py-28 px-4">
+        <div class="max-w-6xl mx-auto section-reveal">
+            <div class="text-center mb-14">
+                <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Enterprise</span>
+                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Built for Teams at Scale</h2>
+                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">From 2-person startups to 2,000-person engineering orgs — Corbina scales with you.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Starter -->
+                <div class="bg-zinc-900 rounded-2xl p-8 border border-zinc-700">
+                    <div class="text-zinc-400 text-sm font-semibold uppercase tracking-wider mb-2">Starter</div>
+                    <div class="flex items-end gap-1 mb-1">
+                        <span class="text-white text-4xl font-extrabold brand-font">$17</span>
+                        <span class="text-zinc-500 mb-2">/month</span>
+                    </div>
+                    <p class="text-zinc-500 text-sm mb-6">Per user. Perfect for individual engineers.</p>
+                    <ul class="flex flex-col gap-3 mb-8">
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>All 100+ integrations</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Unlimited alerts</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>13 months data retention</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>AI root-cause analysis</li>
+                        <li class="flex items-center gap-2 text-zinc-400 text-sm"><svg class="w-4 h-4 text-zinc-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>Team dashboards</li>
+                        <li class="flex items-center gap-2 text-zinc-400 text-sm"><svg class="w-4 h-4 text-zinc-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>SAML SSO</li>
+                    </ul>
+                    <a href="#" class="block text-center bg-zinc-700 hover:bg-zinc-600 text-white py-3 rounded-full font-semibold transition-colors text-sm">Get Started</a>
+                </div>
+
+                <!-- Team (highlighted) -->
+                <div class="bg-brand-blue rounded-2xl p-8 border border-brand-blue relative">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-brand-blue text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
+                    <div class="text-blue-100 text-sm font-semibold uppercase tracking-wider mb-2">Team</div>
+                    <div class="flex items-end gap-1 mb-1">
+                        <span class="text-white text-4xl font-extrabold brand-font">$12</span>
+                        <span class="text-blue-200 mb-2">/user/month</span>
+                    </div>
+                    <p class="text-blue-200 text-sm mb-6">5–50 seats. Billed annually.</p>
+                    <ul class="flex flex-col gap-3 mb-8">
+                        <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Everything in Starter</li>
+                        <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Shared team dashboards</li>
+                        <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>On-call scheduling</li>
+                        <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Priority support</li>
+                        <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>36 months retention</li>
+                        <li class="flex items-center gap-2 text-blue-200 text-sm"><svg class="w-4 h-4 text-blue-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>SAML SSO</li>
+                    </ul>
+                    <a href="#" class="block text-center bg-white hover:bg-zinc-100 text-brand-blue py-3 rounded-full font-bold transition-colors text-sm">Start Free Trial</a>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="bg-zinc-900 rounded-2xl p-8 border border-zinc-700">
+                    <div class="text-zinc-400 text-sm font-semibold uppercase tracking-wider mb-2">Enterprise</div>
+                    <div class="flex items-end gap-1 mb-1">
+                        <span class="text-white text-4xl font-extrabold brand-font">Custom</span>
+                    </div>
+                    <p class="text-zinc-500 text-sm mb-6">50+ seats. Volume pricing available.</p>
+                    <ul class="flex flex-col gap-3 mb-8">
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Everything in Team</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>SAML SSO + SCIM</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Single-tenant deployment</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Dedicated CSM</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Custom retention &amp; SLA</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>On-prem available</li>
+                    </ul>
+                    <a href="#" class="block text-center bg-zinc-700 hover:bg-zinc-600 text-white py-3 rounded-full font-semibold transition-colors text-sm">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="bg-zinc-900 py-16 px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-white text-3xl md:text-4xl font-extrabold mb-4">Ready to get clarity?</h2>
+            <p class="text-zinc-400 text-lg mb-8">Join thousands of engineers who trust Corbina to keep their stack healthy.</p>
+            <a href="#" class="bg-brand-blue hover:bg-brand-blue-hover text-white px-8 py-4 rounded-full font-bold text-lg inline-flex items-center gap-2 transition-colors">
+                Start Free — No Card Needed
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-900 border-t border-zinc-800 px-4 py-10">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <svg width="32" height="32" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="100" fill="#0066cc"/>
+                    <path fill="white" d="M38 100 C38 66 62 42 95 38 C114 35 138 42 155 58 C167 70 172 84 170 100 C172 116 167 130 155 142 C138 158 114 165 95 162 C62 158 38 134 38 100Z"/>
+                    <path fill="white" d="M38 100 L10 74 L21 100 L10 126Z"/>
+                    <path fill="white" d="M92 38 C98 20 116 16 126 36 L108 40Z"/>
+                    <path fill="white" d="M122 108 C115 130 102 140 92 132 C99 120 112 113 122 108Z"/>
+                    <circle cx="148" cy="88" r="11" fill="#0066cc"/>
+                    <circle cx="152" cy="84" r="4" fill="white"/>
+                    <path fill="#0066cc" d="M162 100 C166 95 171 97 169 104 C168 108 162 110 160 106Z"/>
+                    <path fill="white" d="M156 108 C158 118 155 124 152 122 C150 116 152 109 156 108Z"/>
+                </svg>
+                <span class="text-white font-bold brand-font text-lg tracking-wide">Corbina</span>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 text-zinc-400 text-sm">
+                <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
+                <a href="#technology" class="hover:text-white transition-colors">Technology</a>
+                <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
+                <a href="#solutions" class="hover:text-white transition-colors">Solutions</a>
+                <a href="#faqs" class="hover:text-white transition-colors">FAQs</a>
+                <a href="#for-teams" class="hover:text-white transition-colors">For Teams</a>
+            </div>
+            <div class="text-zinc-600 text-sm">© 2026 Corbina. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize event listeners when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const menuButton = document.getElementById('mobile-menu-button');
+            if (menuButton) {
+                menuButton.addEventListener('click', toggleMenu);
+            }
+
+            // Mobile menu links
+            const mobileMenuLinks = document.querySelectorAll('#mobileMenu a[href^="#"]');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (this.closest('#mobileMenu')) {
+                        toggleMenu();
+                    }
+                });
+            });
+
+            // FAQ toggles
+            document.querySelectorAll('.faq-item button').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    toggleFaq(this);
+                });
+            });
+        });
+
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+
+        function toggleFaq(btn) {
+            const item = btn.closest('.faq-item');
+            const answer = item.querySelector('.faq-answer');
+            const isOpen = item.classList.contains('open');
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(i => {
+                i.classList.remove('open');
+                i.querySelector('.faq-answer').classList.remove('open');
+            });
+            // Open clicked if it was closed
+            if (!isOpen) {
+                item.classList.add('open');
+                answer.classList.add('open');
+            }
+        }
+
+        // Scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) e.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.section-reveal').forEach(el => observer.observe(el));
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

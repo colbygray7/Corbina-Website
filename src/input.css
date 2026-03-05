@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+* {
+  font-family: 'Space Grotesk', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .brand-font {
+  font-family: 'Syne', Arial, sans-serif;
+}
+
+.hero-bg {
+  background: linear-gradient(180deg,
+    rgba(30, 120, 200, 0.15) 0%,
+    rgba(20, 80, 150, 0.25) 25%,
+    rgba(10, 40, 100, 0.5) 60%,
+    rgba(0, 0, 0, 0.7) 90%,
+    rgba(0, 0, 0, 0.85) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#fish-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.content-layer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Realistic Fish Animation */
+.fish-realistic {
+  position: absolute;
+  width: 520px;
+  height: 260px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.22;
+  animation: swim 22s infinite ease-in-out;
+  filter: drop-shadow(0 20px 40px rgba(0, 80, 180, 0.5));
+}
+
+@media (max-width: 768px) {
+  .fish-realistic {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+@keyframes swim {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotateY(0deg) translateX(0px) translateY(0px);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotateY(12deg) translateX(180px) translateY(-60px);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotateY(0deg) translateX(0px) translateY(-90px);
+  }
+  80% {
+    transform: translate(-50%, -50%) rotateY(-12deg) translateX(-180px) translateY(-40px);
+  }
+}
+
+@keyframes tailWag {
+  0%, 100% { transform-origin: 90% 50%; transform: rotate(0deg); }
+  25% { transform-origin: 90% 50%; transform: rotate(8deg); }
+  75% { transform-origin: 90% 50%; transform: rotate(-8deg); }
+}
+
+@keyframes finWave {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.75); }
+}
+
+.fish-tail-group {
+  animation: tailWag 0.9s infinite ease-in-out;
+}
+
+.fish-pec-fin {
+  animation: finWave 1.2s infinite ease-in-out;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+/* Tab sections */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* FAQ animations */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.faq-answer.open {
+  max-height: 500px;
+  padding-top: 1rem;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
