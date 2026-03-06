@@ -10,6 +10,14 @@ dist/
 # IDE
 .vscode/
 
+# Claude Code settings (contains permissions and may contain sensitive data)
+.claude/settings.local.json
+
 # Screenshots (optional - remove these lines if you want to commit screenshots)
 screenshot*.png
 screenshot-final.png
+screenshot-latest.png
+
+# Temporary files
+*.tmp
+*.temp
