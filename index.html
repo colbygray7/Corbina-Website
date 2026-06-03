@@ -8,12 +8,13 @@
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
-    <title>Corbina - Unlock Your Tech Intelligence</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 200'%3E%3Ccircle cx='115' cy='100' r='100' fill='%231976d2'/%3E%3Cpath fill='white' d='M 58 96 Q 38 80, 10 63 Q 24 85, 28 100 Q 24 115, 10 137 Q 38 120, 58 104 Z'/%3E%3Cpath fill='white' d='M 205 100 C 204 86, 196 68, 178 61 C 160 54, 136 56, 112 62 C 90 67, 70 76, 60 91 C 55 97, 55 103, 60 109 C 70 124, 90 133, 112 138 C 136 144, 160 146, 178 139 C 196 132, 204 114, 205 100 Z'/%3E%3Cpath fill='white' d='M 108 62 C 120 43, 144 39, 154 55 L 145 64 Z'/%3E%3Cpath fill='white' d='M 92 126 C 85 138, 76 150, 64 155 C 72 143, 82 133, 92 126 Z'/%3E%3Cpath fill='none' stroke='%231976d2' stroke-width='4.5' stroke-linecap='round' d='M 152 72 C 149 88, 149 112, 152 128'/%3E%3Cpath fill='none' stroke='%231976d2' stroke-width='3.5' stroke-linecap='round' d='M 140 70 C 137 86, 137 114, 140 130'/%3E%3Ccircle cx='174' cy='88' r='8' fill='%231976d2'/%3E%3Ccircle cx='176' cy='86' r='3' fill='white'/%3E%3C/svg%3E">
+    <title>Corbina — Automate Your Agency Operations at Scale</title>
+    <meta name="description" content="Corbina helps agencies automate their operations at scale — client onboarding, reporting, lead routing, and billing, all running on autopilot.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%231976d2' d='M24 50 C30 35 45 28 62 28 C74 28 84 36 90 50 C84 64 74 72 62 72 C45 72 30 65 24 50 Z'/%3E%3Cpath fill='%231976d2' d='M24 50 L8 34 L14 50 L8 66 Z'/%3E%3Ccircle cx='74' cy='44' r='4' fill='white'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="dist/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         .btn-orange { background-color: #f97316; }
         .btn-orange:hover { background-color: #ea6c0a; }
@@ -24,201 +25,38 @@
     <!-- Hero Section -->
     <section class="hero-bg min-h-screen flex flex-col rounded-none md:rounded-[2.5rem] mx-0 md:mx-4 my-0 md:my-4 overflow-hidden relative">
 
-        <!-- Realistic Animated Fish Background -->
-        <div id="fish-container">
-            <svg class="fish-realistic" viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style="stop-color:#1a5fa8;stop-opacity:1"/>
-                        <stop offset="30%" style="stop-color:#2e8fef;stop-opacity:1"/>
-                        <stop offset="65%" style="stop-color:#4daeff;stop-opacity:1"/>
-                        <stop offset="100%" style="stop-color:#1a5fa8;stop-opacity:1"/>
-                    </linearGradient>
-                    <linearGradient id="bellyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" style="stop-color:#3a9ff8;stop-opacity:1"/>
-                        <stop offset="100%" style="stop-color:#cce8ff;stop-opacity:0.9"/>
-                    </linearGradient>
-                    <linearGradient id="finGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#0d4a8a;stop-opacity:0.9"/>
-                        <stop offset="100%" style="stop-color:#1e7ad4;stop-opacity:0.7"/>
-                    </linearGradient>
-                    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style="stop-color:#0a3a70;stop-opacity:0.8"/>
-                        <stop offset="100%" style="stop-color:#1e6cc8;stop-opacity:0.9"/>
-                    </linearGradient>
-                    <radialGradient id="eyeGrad" cx="40%" cy="35%" r="60%">
-                        <stop offset="0%" style="stop-color:#1a3a5c"/>
-                        <stop offset="100%" style="stop-color:#0a0a20"/>
-                    </radialGradient>
-                    <filter id="fishShadow" x="-10%" y="-10%" width="120%" height="120%">
-                        <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#001540" flood-opacity="0.5"/>
-                    </filter>
-                    <clipPath id="scaleClip">
-                        <ellipse cx="260" cy="130" rx="185" ry="78"/>
-                    </clipPath>
-                </defs>
-
-                <!-- Tail group (animated) -->
-                <g class="fish-tail-group">
-                    <!-- Tail fin - forked, detailed -->
-                    <path fill="url(#tailGrad)" d="M 95 130 Q 55 95, 15 70 Q 30 105, 38 130 Q 30 155, 15 190 Q 55 165, 95 130 Z"/>
-                    <!-- Tail rays/detail lines -->
-                    <path stroke="#1a6abf" stroke-width="1" fill="none" opacity="0.6" d="M 95 130 Q 55 95, 20 72"/>
-                    <path stroke="#1a6abf" stroke-width="1" fill="none" opacity="0.6" d="M 95 130 Q 45 108, 18 88"/>
-                    <path stroke="#1a6abf" stroke-width="1" fill="none" opacity="0.6" d="M 95 130 Q 30 130, 16 130"/>
-                    <path stroke="#1a6abf" stroke-width="1" fill="none" opacity="0.6" d="M 95 130 Q 45 152, 18 172"/>
-                    <path stroke="#1a6abf" stroke-width="1" fill="none" opacity="0.6" d="M 95 130 Q 55 165, 20 188"/>
-                    <!-- Caudal peduncle shading -->
-                    <ellipse cx="95" cy="130" rx="12" ry="20" fill="#1255a0" opacity="0.5"/>
-                </g>
-
-                <!-- Main body -->
-                <ellipse filter="url(#fishShadow)" cx="275" cy="130" rx="185" ry="78" fill="url(#bodyGrad)"/>
-
-                <!-- Belly lighter area -->
-                <ellipse cx="265" cy="148" rx="155" ry="38" fill="url(#bellyGrad)" opacity="0.55"/>
-
-                <!-- Lateral line -->
-                <path stroke="#5bc0ff" stroke-width="1.5" fill="none" opacity="0.7"
-                    d="M 105 115 Q 180 108, 260 112 Q 330 115, 390 120 Q 420 123, 445 128"/>
-
-                <!-- Scale texture (clipped to body) -->
-                <g clip-path="url(#scaleClip)" opacity="0.18">
-                    <!-- Row 1 -->
-                    <ellipse cx="130" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="158" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="186" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="214" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="242" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="270" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="298" cy="115" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="326" cy="116" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="354" cy="118" rx="13" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <!-- Row 2 -->
-                    <ellipse cx="144" cy="130" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="172" cy="130" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="200" cy="130" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="228" cy="130" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="256" cy="130" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="284" cy="130" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="312" cy="131" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="340" cy="132" rx="13" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <!-- Row 3 -->
-                    <ellipse cx="130" cy="145" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="158" cy="145" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="186" cy="146" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="214" cy="146" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="242" cy="147" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="270" cy="147" rx="14" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="298" cy="148" rx="13" ry="9" fill="none" stroke="#80ccff" stroke-width="1"/>
-                    <ellipse cx="326" cy="149" rx="12" ry="8" fill="none" stroke="#80ccff" stroke-width="1"/>
-                </g>
-
-                <!-- Dorsal fin (spiny + soft rays) -->
-                <path fill="url(#finGrad)" d="M 140 52 Q 158 30, 178 22 Q 200 16, 225 20 Q 248 24, 265 30 Q 278 35, 282 52 L 265 58 L 248 54 L 225 50 L 200 50 L 178 54 L 162 58 Z" opacity="0.9"/>
-                <!-- Dorsal fin rays -->
-                <line x1="150" y1="56" x2="162" y2="30" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
-                <line x1="165" y1="54" x2="175" y2="24" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
-                <line x1="180" y1="52" x2="188" y2="20" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
-                <line x1="196" y1="50" x2="202" y2="17" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
-                <line x1="212" y1="50" x2="217" y2="19" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
-                <line x1="228" y1="50" x2="232" y2="22" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
-                <line x1="244" y1="52" x2="248" y2="26" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
-                <line x1="258" y1="54" x2="265" y2="31" stroke="#0a3a70" stroke-width="1.2" opacity="0.5"/>
-
-                <!-- Second dorsal fin (soft, smaller) -->
-                <path fill="url(#finGrad)" d="M 290 52 Q 305 36, 330 32 Q 355 30, 370 42 L 355 52 L 330 50 L 305 54 Z" opacity="0.85"/>
-
-                <!-- Anal fin -->
-                <path fill="url(#finGrad)" d="M 200 205 Q 215 220, 240 225 Q 260 228, 280 222 L 268 208 L 245 208 L 220 208 Z" opacity="0.85"/>
-
-                <!-- Pectoral fin (animated) -->
-                <g class="fish-pec-fin">
-                    <path fill="url(#finGrad)" d="M 360 118 Q 385 108, 400 118 Q 410 130, 400 148 Q 388 162, 368 158 Q 350 152, 348 140 Q 346 128, 360 118 Z" opacity="0.9"/>
-                    <!-- Pectoral rays -->
-                    <line x1="360" y1="118" x2="400" y2="118" stroke="#0a3a70" stroke-width="1" opacity="0.4"/>
-                    <line x1="355" y1="128" x2="406" y2="128" stroke="#0a3a70" stroke-width="1" opacity="0.4"/>
-                    <line x1="352" y1="138" x2="402" y2="142" stroke="#0a3a70" stroke-width="1" opacity="0.4"/>
-                    <line x1="352" y1="148" x2="394" y2="155" stroke="#0a3a70" stroke-width="1" opacity="0.4"/>
-                </g>
-
-                <!-- Pelvic fin -->
-                <path fill="url(#finGrad)" d="M 320 195 Q 340 210, 355 218 Q 338 222, 318 215 Q 308 208, 308 200 Z" opacity="0.85"/>
-
-                <!-- Head shape overlay (darker) -->
-                <ellipse cx="420" cy="130" rx="60" ry="55" fill="#1a5fa8" opacity="0.3"/>
-
-                <!-- Operculum (gill cover) -->
-                <path fill="none" stroke="#0d4a8a" stroke-width="2.5" opacity="0.7"
-                    d="M 390 88 Q 408 105, 412 130 Q 408 155, 390 172"/>
-
-                <!-- Eye -->
-                <circle cx="440" cy="116" r="16" fill="url(#eyeGrad)"/>
-                <circle cx="440" cy="116" r="13" fill="#0f1f35" opacity="0.8"/>
-                <circle cx="435" cy="111" r="5" fill="white" opacity="0.7"/>
-                <circle cx="432" cy="109" r="2" fill="white" opacity="0.9"/>
-                <!-- Eye ring -->
-                <circle cx="440" cy="116" r="16" fill="none" stroke="#4a9ee0" stroke-width="1.5" opacity="0.5"/>
-
-                <!-- Mouth - inferior (corbina style) -->
-                <path fill="#0a2a50" d="M 455 140 Q 465 148, 460 155 Q 452 158, 445 154 Q 440 149, 445 143 Z"/>
-                <path fill="none" stroke="#1e5a9a" stroke-width="1.5" opacity="0.6"
-                    d="M 445 142 Q 456 148, 450 155"/>
-
-                <!-- Chin barbel (corbina characteristic) -->
-                <path fill="none" stroke="#1e5a9a" stroke-width="2" opacity="0.7"
-                    d="M 452 156 Q 455 165, 452 170"/>
-                <circle cx="452" cy="171" r="2.5" fill="#1e5a9a" opacity="0.6"/>
-
-                <!-- Nostril -->
-                <ellipse cx="455" cy="130" rx="3.5" ry="2.5" fill="#0a2a50" opacity="0.7"/>
-
-                <!-- Body sheen highlight -->
-                <path fill="white" opacity="0.08"
-                    d="M 140 90 Q 220 72, 340 78 Q 380 82, 405 95 Q 360 85, 280 84 Q 200 83, 140 90 Z"/>
-            </svg>
-        </div>
+        <!-- Great Barrier Reef background -->
+        <div id="reef-bg"></div>
+        <div id="reef-overlay"></div>
 
         <!-- Navigation -->
         <nav class="bg-zinc-800/95 backdrop-blur-sm rounded-none md:rounded-full mx-0 md:mx-8 mt-0 md:mt-6 px-4 md:px-8 py-3.5 flex items-center justify-between content-layer">
             <!-- Logo -->
             <div class="flex items-center gap-2 md:gap-3">
-                <svg width="40" height="36" viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg" class="md:w-12 md:h-11">
-                    <!-- Blue circle, offset right to leave room for tail on left -->
-                    <circle cx="115" cy="100" r="100" fill="#1976d2"/>
-                    <!-- Forked tail (white, extends left of circle) -->
-                    <path fill="white" d="M 58 96 Q 38 80, 10 63 Q 24 85, 28 100 Q 24 115, 10 137 Q 38 120, 58 104 Z"/>
-                    <!-- Main fish body (white, torpedo-shaped, facing right) -->
-                    <path fill="white" d="M 205 100 C 204 86, 196 68, 178 61 C 160 54, 136 56, 112 62 C 90 67, 70 76, 60 91 C 55 97, 55 103, 60 109 C 70 124, 90 133, 112 138 C 136 144, 160 146, 178 139 C 196 132, 204 114, 205 100 Z"/>
-                    <!-- Dorsal fin (white, curves up from back of body) -->
-                    <path fill="white" d="M 108 62 C 120 43, 144 39, 154 55 L 145 64 Z"/>
-                    <!-- Pectoral fin (white, sweeps down-back below gill area) -->
-                    <path fill="white" d="M 92 126 C 85 138, 76 150, 64 155 C 72 143, 82 133, 92 126 Z"/>
-                    <!-- Gill arcs (blue, 2 curved lines on head) -->
-                    <path fill="none" stroke="#1976d2" stroke-width="4.5" stroke-linecap="round" d="M 152 72 C 149 88, 149 112, 152 128"/>
-                    <path fill="none" stroke="#1976d2" stroke-width="3.5" stroke-linecap="round" d="M 140 70 C 137 86, 137 114, 140 130"/>
-                    <!-- Eye (blue circle with white pupil highlight) -->
-                    <circle cx="174" cy="88" r="8" fill="#1976d2"/>
-                    <circle cx="176" cy="86" r="3" fill="white"/>
+                <svg width="34" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="md:w-10 md:h-9">
+                    <!-- Minimalist fish: body, forked tail, eye -->
+                    <path fill="#3a9ff8" d="M24 50 C30 35 45 28 62 28 C74 28 84 36 90 50 C84 64 74 72 62 72 C45 72 30 65 24 50 Z"/>
+                    <path fill="#3a9ff8" d="M24 50 L8 34 L14 50 L8 66 Z"/>
+                    <circle cx="74" cy="44" r="4" fill="#18181b"/>
                 </svg>
-                <span class="text-white text-xl md:text-2xl font-extrabold" style="font-family: 'Nunito', sans-serif; letter-spacing: -0.01em;">Corbina</span>
+                <span class="text-white text-xl md:text-2xl font-extrabold brand-font" style="letter-spacing: -0.01em;">Corbina</span>
             </div>
 
             <!-- Desktop Navigation -->
             <div class="hidden lg:flex items-center gap-6 xl:gap-8 text-white text-sm xl:text-base font-medium">
                 <a href="#how-it-works" class="hover:text-zinc-300 transition-colors">How It Works</a>
-                <a href="#technology" class="hover:text-zinc-300 transition-colors">Technology</a>
-                <a href="#reviews" class="hover:text-zinc-300 transition-colors">Reviews</a>
+                <a href="#capabilities" class="hover:text-zinc-300 transition-colors">Capabilities</a>
+                <a href="#reviews" class="hover:text-zinc-300 transition-colors">Results</a>
                 <a href="#solutions" class="hover:text-zinc-300 transition-colors">Solutions</a>
                 <span class="text-zinc-400">|</span>
-                <a href="#faqs" class="hover:text-zinc-300 transition-colors">FAQs</a>
-                <a href="#for-teams" class="hover:text-zinc-300 transition-colors">For Teams</a>
+                <a href="#founder" class="hover:text-zinc-300 transition-colors">Founder</a>
+                <a href="#pricing" class="hover:text-zinc-300 transition-colors">Pricing</a>
             </div>
 
             <!-- Desktop CTA -->
             <div class="hidden md:flex items-center gap-4">
-                <a href="#" class="text-white hover:text-zinc-300 text-sm lg:text-base font-medium">Login</a>
-                <a href="#" class="btn-orange text-white px-4 lg:px-6 py-2 lg:py-3 rounded-full font-medium transition-colors text-sm lg:text-base">Try Corbina</a>
+                <a href="#faqs" class="text-white hover:text-zinc-300 text-sm lg:text-base font-medium">FAQs</a>
+                <a href="#" class="btn-orange text-white px-4 lg:px-6 py-2 lg:py-3 rounded-full font-medium transition-colors text-sm lg:text-base">Book a demo</a>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -232,44 +70,52 @@
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="mobile-menu flex-col gap-4 bg-zinc-800/95 backdrop-blur-sm mx-0 md:mx-8 px-4 py-4 content-layer">
             <a href="#how-it-works" class="text-white hover:text-zinc-300 py-2">How It Works</a>
-            <a href="#technology" class="text-white hover:text-zinc-300 py-2">Technology</a>
-            <a href="#reviews" class="text-white hover:text-zinc-300 py-2">Reviews</a>
+            <a href="#capabilities" class="text-white hover:text-zinc-300 py-2">Capabilities</a>
+            <a href="#reviews" class="text-white hover:text-zinc-300 py-2">Results</a>
             <a href="#solutions" class="text-white hover:text-zinc-300 py-2">Solutions</a>
+            <a href="#founder" class="text-white hover:text-zinc-300 py-2">Founder</a>
             <a href="#faqs" class="text-white hover:text-zinc-300 py-2">FAQs</a>
-            <a href="#for-teams" class="text-white hover:text-zinc-300 py-2">For Teams</a>
+            <a href="#pricing" class="text-white hover:text-zinc-300 py-2">Pricing</a>
             <div class="border-t border-zinc-600 pt-4 mt-2 flex flex-col gap-3">
-                <a href="#" class="text-white hover:text-zinc-300">Login</a>
-                <a href="#" class="btn-orange text-white px-6 py-3 rounded-full font-medium transition-colors text-center">Try Corbina</a>
+                <a href="#" class="btn-orange text-white px-6 py-3 rounded-full font-medium transition-colors text-center">Book a demo</a>
             </div>
         </div>
 
-        <!-- Hero Content (COMMENTED OUT - can be re-enabled later) -->
-        <!--
-        <div class="flex-1 flex flex-col items-center justify-center text-center px-4 md:px-8 pb-16 md:pb-24 content-layer">
-            <h1 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-extrabold mb-4 md:mb-6 leading-[1.1] max-w-5xl tracking-tight">
-                Unlock your<br>tech intelligence
+        <!-- Hero Content -->
+        <div class="flex-1 flex flex-col items-center justify-center text-center px-4 md:px-8 pt-28 pb-20 md:pt-24 md:pb-28 content-layer">
+            <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-xs md:text-sm font-medium px-4 py-1.5 rounded-full mb-6">
+                <span class="w-2 h-2 rounded-full bg-brand-blue"></span>
+                Automation built for agencies
+            </span>
+
+            <h1 class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-extrabold mb-5 md:mb-6 leading-[1.08] max-w-4xl tracking-tight">
+                We help agencies automate<br class="hidden md:block"> their operations at scale
             </h1>
 
-            <p class="text-white/80 text-base sm:text-lg md:text-xl mb-8 md:mb-10 max-w-3xl leading-relaxed px-4 font-light">
-                100+ integrations. Real-time analytics. Monitor performance of 1,000+
-                systems. All for only $17/month
+            <p class="text-white/85 text-base sm:text-lg md:text-xl mb-9 md:mb-10 max-w-2xl leading-relaxed px-4 font-light">
+                Client onboarding, reporting, lead routing, and billing — running on autopilot.
+                Corbina connects your tools and lets your team focus on the work that grows the agency.
             </p>
 
-            <a href="#" class="bg-brand-blue hover:bg-brand-blue-hover text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-base md:text-lg inline-flex items-center gap-2 transition-colors mb-4 md:mb-6">
-                Join Today
-                <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                </svg>
-            </a>
+            <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+                <a href="#" class="btn-orange text-white px-7 md:px-8 py-3.5 md:py-4 rounded-full font-semibold text-base md:text-lg inline-flex items-center gap-2 transition-colors">
+                    Book a demo
+                    <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#how-it-works" class="text-white/90 hover:text-white border border-white/30 hover:border-white/60 px-7 md:px-8 py-3.5 md:py-4 rounded-full font-semibold text-base md:text-lg transition-colors">
+                    See how it works
+                </a>
+            </div>
 
-            <div class="flex items-center gap-2 text-white/70 text-xs md:text-sm">
-                <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center gap-2 text-white/70 text-xs md:text-sm mt-7">
+                <svg class="w-4 h-4 md:w-5 md:h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
-                <span>Enterprise ready</span>
+                <span>Trusted by agencies in 20+ countries</span>
             </div>
         </div>
-        -->
     </section>
 
     <!-- ===================== HOW IT WORKS ===================== -->
@@ -278,7 +124,7 @@
             <div class="text-center mb-14">
                 <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Process</span>
                 <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">How It Works</h2>
-                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Get from zero to full visibility in minutes. No DevOps PhD required.</p>
+                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">From messy manual ops to fully automated in days — no engineering team required.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Step 1 -->
@@ -290,7 +136,7 @@
                         </svg>
                     </div>
                     <h3 class="text-white font-bold text-lg mb-2">Connect</h3>
-                    <p class="text-zinc-400 text-sm leading-relaxed">Link your stack in one click — AWS, GitHub, Datadog, Slack, Jira, and 100+ more integrations available instantly.</p>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Plug in the tools your agency already runs on — Slack, HubSpot, Notion, QuickBooks, Asana, and 100+ more in a few clicks.</p>
                 </div>
                 <!-- Step 2 -->
                 <div class="bg-zinc-800 rounded-2xl p-6 relative overflow-hidden group hover:bg-zinc-700 transition-colors">
@@ -300,8 +146,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                         </svg>
                     </div>
-                    <h3 class="text-white font-bold text-lg mb-2">Analyze</h3>
-                    <p class="text-zinc-400 text-sm leading-relaxed">Corbina's AI engine maps relationships across your systems, surfacing anomalies and patterns in real time.</p>
+                    <h3 class="text-white font-bold text-lg mb-2">Map</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">We map your client workflows end to end — onboarding, approvals, reporting — and pinpoint exactly what to automate first.</p>
                 </div>
                 <!-- Step 3 -->
                 <div class="bg-zinc-800 rounded-2xl p-6 relative overflow-hidden group hover:bg-zinc-700 transition-colors">
@@ -311,8 +157,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
                         </svg>
                     </div>
-                    <h3 class="text-white font-bold text-lg mb-2">Alert</h3>
-                    <p class="text-zinc-400 text-sm leading-relaxed">Get actionable alerts — not noise. Smart deduplication and root-cause correlation mean you act fast, not blind.</p>
+                    <h3 class="text-white font-bold text-lg mb-2">Automate</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Corbina runs the repetitive work for you — sending reports, routing leads, chasing invoices — with AI agents that never drop the ball.</p>
                 </div>
                 <!-- Step 4 -->
                 <div class="bg-zinc-800 rounded-2xl p-6 relative overflow-hidden group hover:bg-zinc-700 transition-colors">
@@ -322,20 +168,20 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3 class="text-white font-bold text-lg mb-2">Optimize</h3>
-                    <p class="text-zinc-400 text-sm leading-relaxed">Continuously improve. Corbina learns your baselines and suggests cost, performance, and reliability optimizations.</p>
+                    <h3 class="text-white font-bold text-lg mb-2">Scale</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Take on more clients without adding headcount. Your automations scale with you, so margins grow instead of overhead.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ===================== TECHNOLOGY ===================== -->
-    <section id="technology" class="bg-zinc-800 py-20 md:py-28 px-4">
+    <section id="capabilities" class="bg-zinc-800 py-20 md:py-28 px-4">
         <div class="max-w-6xl mx-auto section-reveal">
             <div class="text-center mb-14">
-                <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Under the Hood</span>
-                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Built Different</h2>
-                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Production-grade infrastructure intelligence powered by cutting-edge AI.</p>
+                <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Capabilities</span>
+                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Built for Agency Operations</h2>
+                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">A complete automation layer that sits on top of the tools your agency already uses.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <!-- Card 1 -->
@@ -345,12 +191,12 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/>
                         </svg>
                     </div>
-                    <h3 class="text-white font-bold text-xl mb-3">Unified Data Layer</h3>
-                    <p class="text-zinc-400 leading-relaxed">Ingest metrics, logs, traces, and events from every source into a single normalized stream. Query everything with one API.</p>
+                    <h3 class="text-white font-bold text-xl mb-3">Visual Workflow Builder</h3>
+                    <p class="text-zinc-400 leading-relaxed">Drag-and-drop the way your agency works — triggers, approvals, and hand-offs — and turn any repeatable process into an automation in minutes.</p>
                     <div class="mt-5 flex flex-wrap gap-2">
-                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">OpenTelemetry</span>
-                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">ClickHouse</span>
-                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Apache Kafka</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">No-code</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Templates</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Conditional logic</span>
                     </div>
                 </div>
                 <!-- Card 2 -->
@@ -360,11 +206,11 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
                         </svg>
                     </div>
-                    <h3 class="text-white font-bold text-xl mb-3">AI Correlation Engine</h3>
-                    <p class="text-zinc-400 leading-relaxed">Our ML models learn the normal patterns of your infrastructure and flag deviations before they become outages — with sub-minute detection.</p>
+                    <h3 class="text-white font-bold text-xl mb-3">AI Agents</h3>
+                    <p class="text-zinc-400 leading-relaxed">Put AI to work on the busywork — drafting client updates, summarizing calls, qualifying leads, and answering routine requests around the clock.</p>
                     <div class="mt-5 flex flex-wrap gap-2">
-                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Anomaly Detection</span>
-                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Root Cause AI</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Smart drafting</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Lead qualifying</span>
                     </div>
                 </div>
                 <!-- Card 3 -->
@@ -374,12 +220,12 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
-                    <h3 class="text-white font-bold text-xl mb-3">Enterprise Security</h3>
-                    <p class="text-zinc-400 leading-relaxed">SOC 2 Type II certified. Data encrypted at rest and in transit. SAML SSO, RBAC, and full audit logs included on every plan.</p>
+                    <h3 class="text-white font-bold text-xl mb-3">100+ Integrations</h3>
+                    <p class="text-zinc-400 leading-relaxed">Connect your CRM, project management, comms, and billing in one place — your data flows between tools automatically, no copy-paste.</p>
                     <div class="mt-5 flex flex-wrap gap-2">
-                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">SOC 2 Type II</span>
-                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">SAML SSO</span>
-                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">RBAC</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">HubSpot</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Slack</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">QuickBooks</span>
                     </div>
                 </div>
             </div>
@@ -387,16 +233,16 @@
             <!-- Stats Bar -->
             <div class="bg-zinc-900 rounded-2xl border border-zinc-700 p-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div>
-                    <div class="text-3xl md:text-4xl font-extrabold text-white brand-font mb-1">99.99%</div>
-                    <div class="text-zinc-400 text-sm">Uptime SLA</div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-white brand-font mb-1">20+</div>
+                    <div class="text-zinc-400 text-sm">Hours saved / week</div>
                 </div>
                 <div>
-                    <div class="text-3xl md:text-4xl font-extrabold text-white brand-font mb-1">&lt;30s</div>
-                    <div class="text-zinc-400 text-sm">Alert latency</div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-white brand-font mb-1">100k+</div>
+                    <div class="text-zinc-400 text-sm">Automation runs</div>
                 </div>
                 <div>
-                    <div class="text-3xl md:text-4xl font-extrabold text-white brand-font mb-1">1,000+</div>
-                    <div class="text-zinc-400 text-sm">Systems monitored</div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-white brand-font mb-1">3x</div>
+                    <div class="text-zinc-400 text-sm">Faster onboarding</div>
                 </div>
                 <div>
                     <div class="text-3xl md:text-4xl font-extrabold text-white brand-font mb-1">100+</div>
@@ -411,8 +257,8 @@
         <div class="max-w-6xl mx-auto section-reveal">
             <div class="text-center mb-14">
                 <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Testimonials</span>
-                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">What Teams Are Saying</h2>
-                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">From startups to Fortune 500s — engineers love Corbina.</p>
+                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">What Agencies Are Saying</h2>
+                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">From boutique studios to 100-person shops — agency teams run leaner on Corbina.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Review 1 -->
@@ -424,12 +270,12 @@
                         <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                         <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                     </div>
-                    <p class="text-zinc-300 leading-relaxed flex-1 mb-6">"We cut our mean time to resolution by 70% in the first month. Corbina's AI surfaced a cascading database issue that would have taken us hours to find manually."</p>
+                    <p class="text-zinc-300 leading-relaxed flex-1 mb-6">"Corbina automated our entire client onboarding. What used to take our team two days of back-and-forth now happens the moment a contract is signed."</p>
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-full bg-brand-blue/30 flex items-center justify-center text-brand-blue font-bold text-sm">SK</div>
                         <div>
                             <div class="text-white font-semibold text-sm">Sarah K.</div>
-                            <div class="text-zinc-500 text-xs">Staff SRE, Fintech Startup</div>
+                            <div class="text-zinc-500 text-xs">Founder, Creative Agency</div>
                         </div>
                     </div>
                 </div>
@@ -442,12 +288,12 @@
                         <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                         <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                     </div>
-                    <p class="text-zinc-300 leading-relaxed flex-1 mb-6">"$17/month is almost embarrassing for what you get. We replaced three separate monitoring tools with Corbina and actually get better coverage now."</p>
+                    <p class="text-zinc-300 leading-relaxed flex-1 mb-6">"We took on 12 new clients last quarter without hiring a single ops person. The automated reporting alone gives us back a full day every week."</p>
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-full bg-purple-500/30 flex items-center justify-center text-purple-300 font-bold text-sm">MR</div>
                         <div>
                             <div class="text-white font-semibold text-sm">Marcus R.</div>
-                            <div class="text-zinc-500 text-xs">VP Engineering, Series B SaaS</div>
+                            <div class="text-zinc-500 text-xs">Ops Lead, Marketing Agency</div>
                         </div>
                     </div>
                 </div>
@@ -460,12 +306,12 @@
                         <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                         <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                     </div>
-                    <p class="text-zinc-300 leading-relaxed flex-1 mb-6">"Setup took 12 minutes. I was skeptical but now my whole platform team is on it. The Kubernetes cost optimization alone saves us $4k/month."</p>
+                    <p class="text-zinc-300 leading-relaxed flex-1 mb-6">"Setup took an afternoon. Now leads route to the right strategist instantly and invoices chase themselves. Our margins are up double digits."</p>
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-full bg-teal-500/30 flex items-center justify-center text-teal-300 font-bold text-sm">JL</div>
                         <div>
                             <div class="text-white font-semibold text-sm">Jamie L.</div>
-                            <div class="text-zinc-500 text-xs">Platform Lead, E-Commerce Scale-Up</div>
+                            <div class="text-zinc-500 text-xs">Managing Director, Digital Agency</div>
                         </div>
                     </div>
                 </div>
@@ -478,8 +324,8 @@
         <div class="max-w-6xl mx-auto section-reveal">
             <div class="text-center mb-14">
                 <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Use Cases</span>
-                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Solutions for Every Team</h2>
-                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Whether you're shipping software or running infrastructure, Corbina has a workflow for you.</p>
+                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Solutions for Every Agency</h2>
+                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Wherever the manual work piles up, Corbina has a workflow ready to take it off your plate.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Solution 1 -->
@@ -490,8 +336,8 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-white font-bold text-lg mb-2">Infrastructure Monitoring</h3>
-                        <p class="text-zinc-400 leading-relaxed text-sm">Monitor servers, containers, databases, and networks in a single pane of glass. Get capacity alerts before resources run out.</p>
+                        <h3 class="text-white font-bold text-lg mb-2">Client Onboarding</h3>
+                        <p class="text-zinc-400 leading-relaxed text-sm">Auto-create contracts, kickoff docs, project boards, and Slack channels the moment a deal closes. New clients are live in minutes, not days.</p>
                         <a href="#" class="text-brand-blue text-sm font-medium mt-3 inline-flex items-center gap-1 hover:gap-2 transition-all">Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
@@ -503,8 +349,8 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-white font-bold text-lg mb-2">Application Performance</h3>
-                        <p class="text-zinc-400 leading-relaxed text-sm">Distributed tracing, error tracking, and performance profiling. Find slow queries, memory leaks, and P99 latency killers fast.</p>
+                        <h3 class="text-white font-bold text-lg mb-2">Automated Reporting</h3>
+                        <p class="text-zinc-400 leading-relaxed text-sm">Pull results from every channel and send branded client reports on schedule. No more end-of-month scramble in spreadsheets.</p>
                         <a href="#" class="text-brand-blue text-sm font-medium mt-3 inline-flex items-center gap-1 hover:gap-2 transition-all">Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
@@ -516,8 +362,8 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-white font-bold text-lg mb-2">Cloud Cost Intelligence</h3>
-                        <p class="text-zinc-400 leading-relaxed text-sm">Identify waste, right-size instances, and forecast spend. Teams typically find 20–35% cost savings in their first 30 days.</p>
+                        <h3 class="text-white font-bold text-lg mb-2">Lead Routing</h3>
+                        <p class="text-zinc-400 leading-relaxed text-sm">Capture inbound leads, qualify them with AI, and route each one to the right strategist instantly — so no opportunity goes cold.</p>
                         <a href="#" class="text-brand-blue text-sm font-medium mt-3 inline-flex items-center gap-1 hover:gap-2 transition-all">Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
@@ -529,8 +375,8 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-white font-bold text-lg mb-2">Incident Management</h3>
-                        <p class="text-zinc-400 leading-relaxed text-sm">Automated incident creation, on-call routing, and post-mortem generation. Cut MTTR and keep stakeholders informed automatically.</p>
+                        <h3 class="text-white font-bold text-lg mb-2">Billing &amp; Invoicing</h3>
+                        <p class="text-zinc-400 leading-relaxed text-sm">Generate invoices from tracked time and retainers, send them automatically, and chase late payments — so you get paid without lifting a finger.</p>
                         <a href="#" class="text-brand-blue text-sm font-medium mt-3 inline-flex items-center gap-1 hover:gap-2 transition-all">Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
@@ -550,25 +396,25 @@
                 <!-- FAQ 1 -->
                 <div class="faq-item bg-zinc-800 rounded-2xl overflow-hidden">
                     <button class="w-full flex items-center justify-between px-6 py-5 text-left">
-                        <span class="text-white font-semibold">How long does setup take?</span>
+                        <span class="text-white font-semibold">How long does it take to get set up?</span>
                         <svg class="faq-chevron w-5 h-5 text-zinc-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">Most teams are fully connected and receiving insights within 15 minutes. Our onboarding wizard walks you through each integration step by step. No DevOps expertise required.</p>
+                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">Most agencies have their first automations live within a day. Connect your tools, pick a workflow template, and you're running. No engineers or technical expertise required.</p>
                     </div>
                 </div>
                 <!-- FAQ 2 -->
                 <div class="faq-item bg-zinc-800 rounded-2xl overflow-hidden">
                     <button class="w-full flex items-center justify-between px-6 py-5 text-left">
-                        <span class="text-white font-semibold">What integrations are supported?</span>
+                        <span class="text-white font-semibold">Which tools does Corbina integrate with?</span>
                         <svg class="faq-chevron w-5 h-5 text-zinc-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">Corbina supports 100+ integrations including AWS, GCP, Azure, Kubernetes, Docker, PostgreSQL, MySQL, Redis, MongoDB, GitHub, GitLab, Jira, PagerDuty, Slack, Datadog, and many more. New integrations are added weekly.</p>
+                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">Corbina connects to 100+ tools including HubSpot, Salesforce, Slack, Notion, Asana, Monday, ClickUp, Google Workspace, QuickBooks, Stripe, Gmail, and many more. New integrations are added every week.</p>
                     </div>
                 </div>
                 <!-- FAQ 3 -->
@@ -580,7 +426,7 @@
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">Absolutely. Corbina is SOC 2 Type II certified. All data is encrypted in transit (TLS 1.3) and at rest (AES-256). We offer single-tenant deployment for enterprise customers who need full data isolation.</p>
+                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">Absolutely. Corbina is SOC 2 Type II certified. All data is encrypted in transit (TLS 1.3) and at rest (AES-256), and you control exactly which tools and data each automation can access.</p>
                     </div>
                 </div>
                 <!-- FAQ 4 -->
@@ -598,13 +444,13 @@
                 <!-- FAQ 5 -->
                 <div class="faq-item bg-zinc-800 rounded-2xl overflow-hidden">
                     <button class="w-full flex items-center justify-between px-6 py-5 text-left">
-                        <span class="text-white font-semibold">What's included in the $17/month plan?</span>
+                        <span class="text-white font-semibold">Do I need a developer to use Corbina?</span>
                         <svg class="faq-chevron w-5 h-5 text-zinc-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">The $17/month plan includes full access for one user: all integrations, unlimited alerts, 13 months of data retention, AI root-cause analysis, and email support. Team and Enterprise plans are available for larger organizations with additional seats and features.</p>
+                        <p class="px-6 pb-5 text-zinc-400 leading-relaxed">Nope. Corbina is fully no-code — if you can map out a process on a whiteboard, you can build it here. And if you'd rather not, our team will set up your first workflows for you during onboarding.</p>
                     </div>
                 </div>
             </div>
@@ -612,12 +458,12 @@
     </section>
 
     <!-- ===================== FOR TEAMS ===================== -->
-    <section id="for-teams" class="bg-zinc-800 py-20 md:py-28 px-4">
+    <section id="pricing" class="bg-zinc-800 py-20 md:py-28 px-4">
         <div class="max-w-6xl mx-auto section-reveal">
             <div class="text-center mb-14">
-                <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Enterprise</span>
-                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Built for Teams at Scale</h2>
-                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">From 2-person startups to 2,000-person engineering orgs — Corbina scales with you.</p>
+                <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Pricing</span>
+                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Plans That Scale With Your Agency</h2>
+                <p class="text-zinc-400 text-lg max-w-2xl mx-auto">From solo operators to 100-person shops — start small and add seats as you grow.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
@@ -628,13 +474,13 @@
                         <span class="text-white text-4xl font-extrabold brand-font">$17</span>
                         <span class="text-zinc-500 mb-2">/month</span>
                     </div>
-                    <p class="text-zinc-500 text-sm mb-6">Per user. Perfect for individual engineers.</p>
+                    <p class="text-zinc-500 text-sm mb-6">Per seat. Perfect for solo operators &amp; freelancers.</p>
                     <ul class="flex flex-col gap-3 mb-8">
                         <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>All 100+ integrations</li>
-                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Unlimited alerts</li>
-                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>13 months data retention</li>
-                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>AI root-cause analysis</li>
-                        <li class="flex items-center gap-2 text-zinc-400 text-sm"><svg class="w-4 h-4 text-zinc-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>Team dashboards</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Unlimited automations</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Unlimited workflow runs</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>AI agents included</li>
+                        <li class="flex items-center gap-2 text-zinc-400 text-sm"><svg class="w-4 h-4 text-zinc-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>Shared team workspaces</li>
                         <li class="flex items-center gap-2 text-zinc-400 text-sm"><svg class="w-4 h-4 text-zinc-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>SAML SSO</li>
                     </ul>
                     <a href="#" class="block text-center bg-zinc-700 hover:bg-zinc-600 text-white py-3 rounded-full font-semibold transition-colors text-sm">Get Started</a>
@@ -648,16 +494,16 @@
                         <span class="text-white text-4xl font-extrabold brand-font">$12</span>
                         <span class="text-blue-200 mb-2">/user/month</span>
                     </div>
-                    <p class="text-blue-200 text-sm mb-6">5–50 seats. Billed annually.</p>
+                    <p class="text-blue-200 text-sm mb-6">3–25 seats. Billed annually.</p>
                     <ul class="flex flex-col gap-3 mb-8">
                         <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Everything in Starter</li>
-                        <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Shared team dashboards</li>
-                        <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>On-call scheduling</li>
+                        <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Shared team workspaces</li>
+                        <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Client portal access</li>
                         <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Priority support</li>
-                        <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>36 months retention</li>
+                        <li class="flex items-center gap-2 text-white text-sm"><svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Advanced analytics</li>
                         <li class="flex items-center gap-2 text-blue-200 text-sm"><svg class="w-4 h-4 text-blue-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>SAML SSO</li>
                     </ul>
-                    <a href="#" class="block text-center bg-white hover:bg-zinc-100 text-brand-blue py-3 rounded-full font-bold transition-colors text-sm">Start Free Trial</a>
+                    <a href="#" class="block text-center bg-white hover:bg-zinc-100 text-brand-blue py-3 rounded-full font-bold transition-colors text-sm">Book a demo</a>
                 </div>
 
                 <!-- Enterprise -->
@@ -666,14 +512,14 @@
                     <div class="flex items-end gap-1 mb-1">
                         <span class="text-white text-4xl font-extrabold brand-font">Custom</span>
                     </div>
-                    <p class="text-zinc-500 text-sm mb-6">50+ seats. Volume pricing available.</p>
+                    <p class="text-zinc-500 text-sm mb-6">25+ seats. Volume pricing available.</p>
                     <ul class="flex flex-col gap-3 mb-8">
                         <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Everything in Team</li>
                         <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>SAML SSO + SCIM</li>
-                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Single-tenant deployment</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>White-label automations</li>
                         <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Dedicated CSM</li>
-                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Custom retention &amp; SLA</li>
-                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>On-prem available</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Custom SLA &amp; onboarding</li>
+                        <li class="flex items-center gap-2 text-zinc-300 text-sm"><svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Custom integrations</li>
                     </ul>
                     <a href="#" class="block text-center bg-zinc-700 hover:bg-zinc-600 text-white py-3 rounded-full font-semibold transition-colors text-sm">Contact Sales</a>
                 </div>
@@ -681,13 +527,39 @@
         </div>
     </section>
 
+    <!-- ===================== FOUNDER ===================== -->
+    <section id="founder" class="bg-zinc-900 py-20 md:py-28 px-4">
+        <div class="max-w-5xl mx-auto section-reveal">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
+                <!-- Photo -->
+                <div class="flex justify-center md:justify-end">
+                    <div class="relative">
+                        <div class="absolute -inset-3 bg-brand-blue/20 rounded-3xl blur-2xl"></div>
+                        <img src="assets/founder.jpg"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x760/1f2937/3a9ff8?text=Founder';"
+                             alt="Portrait of Corbina's founder"
+                             class="relative w-64 h-80 md:w-72 md:h-[22rem] object-cover rounded-3xl border border-zinc-700 shadow-2xl">
+                    </div>
+                </div>
+                <!-- Bio -->
+                <div class="text-center md:text-left">
+                    <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Founder</span>
+                    <h2 class="text-white text-3xl md:text-4xl font-extrabold mb-2">Colby Gray</h2>
+                    <div class="text-zinc-400 font-medium mb-5">Founder &amp; CEO, Corbina</div>
+                    <p class="text-zinc-400 leading-relaxed mb-4">We got into automation and AI in 2023 and got hooked. We started building systems for agencies, saw how much time they got back, and Corbina came out of that.</p>
+                    <p class="text-zinc-400 leading-relaxed">Today we help agencies all over the world get their operations sorted — so their teams can spend less time on busywork and more time growing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer CTA -->
-    <section class="bg-zinc-900 py-16 px-4">
+    <section class="bg-zinc-800 py-16 px-4">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-white text-3xl md:text-4xl font-extrabold mb-4">Ready to get clarity?</h2>
-            <p class="text-zinc-400 text-lg mb-8">Join thousands of engineers who trust Corbina to keep their stack healthy.</p>
-            <a href="#" class="bg-brand-blue hover:bg-brand-blue-hover text-white px-8 py-4 rounded-full font-bold text-lg inline-flex items-center gap-2 transition-colors">
-                Start Free — No Card Needed
+            <h2 class="text-white text-3xl md:text-4xl font-extrabold mb-4">Ready to automate your agency?</h2>
+            <p class="text-zinc-400 text-lg mb-8">Join the agencies running leaner with Corbina. Book a demo and we'll map your first automation live.</p>
+            <a href="#" class="btn-orange text-white px-8 py-4 rounded-full font-bold text-lg inline-flex items-center gap-2 transition-colors">
+                Book a demo
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                 </svg>
@@ -699,26 +571,22 @@
     <footer class="bg-zinc-900 border-t border-zinc-800 px-4 py-10">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-3">
-                <svg width="32" height="32" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="100" cy="100" r="100" fill="#0066cc"/>
-                    <path fill="white" d="M38 100 C38 66 62 42 95 38 C114 35 138 42 155 58 C167 70 172 84 170 100 C172 116 167 130 155 142 C138 158 114 165 95 162 C62 158 38 134 38 100Z"/>
-                    <path fill="white" d="M38 100 L10 74 L21 100 L10 126Z"/>
-                    <path fill="white" d="M92 38 C98 20 116 16 126 36 L108 40Z"/>
-                    <path fill="white" d="M122 108 C115 130 102 140 92 132 C99 120 112 113 122 108Z"/>
-                    <circle cx="148" cy="88" r="11" fill="#0066cc"/>
-                    <circle cx="152" cy="84" r="4" fill="white"/>
-                    <path fill="#0066cc" d="M162 100 C166 95 171 97 169 104 C168 108 162 110 160 106Z"/>
-                    <path fill="white" d="M156 108 C158 118 155 124 152 122 C150 116 152 109 156 108Z"/>
+                <svg width="30" height="27" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Minimalist fish: body, forked tail, eye -->
+                    <path fill="#3a9ff8" d="M24 50 C30 35 45 28 62 28 C74 28 84 36 90 50 C84 64 74 72 62 72 C45 72 30 65 24 50 Z"/>
+                    <path fill="#3a9ff8" d="M24 50 L8 34 L14 50 L8 66 Z"/>
+                    <circle cx="74" cy="44" r="4" fill="#18181b"/>
                 </svg>
                 <span class="text-white font-bold brand-font text-lg tracking-wide">Corbina</span>
             </div>
             <div class="flex flex-wrap justify-center gap-6 text-zinc-400 text-sm">
                 <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
-                <a href="#technology" class="hover:text-white transition-colors">Technology</a>
-                <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
+                <a href="#capabilities" class="hover:text-white transition-colors">Capabilities</a>
+                <a href="#reviews" class="hover:text-white transition-colors">Results</a>
                 <a href="#solutions" class="hover:text-white transition-colors">Solutions</a>
+                <a href="#founder" class="hover:text-white transition-colors">Founder</a>
                 <a href="#faqs" class="hover:text-white transition-colors">FAQs</a>
-                <a href="#for-teams" class="hover:text-white transition-colors">For Teams</a>
+                <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
             </div>
             <div class="text-zinc-600 text-sm">© 2026 Corbina. All rights reserved.</div>
         </div>

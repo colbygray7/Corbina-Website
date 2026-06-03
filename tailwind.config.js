@@ -6,8 +6,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Space Grotesk', 'Arial', 'sans-serif'],
-        'heading': ['Syne', 'Arial', 'sans-serif'],
+        'sans': ['Plus Jakarta Sans', 'Arial', 'sans-serif'],
+        'heading': ['Plus Jakarta Sans', 'Arial', 'sans-serif'],
+      },
+      colors: {
+        'brand-blue': '#2e8fef',
+        'brand-blue-hover': '#1a72c8',
       },
     },
   },
