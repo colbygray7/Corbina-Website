@@ -42,6 +42,8 @@ jobs:
           cp index.html _site/
           cp -r dist/output.css _site/dist/
           cp CNAME _site/
+          # Copy static assets (founder photo, etc.) if present
+          if [ -d assets ]; then cp -r assets _site/; fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
