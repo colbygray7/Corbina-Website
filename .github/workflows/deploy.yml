@@ -36,6 +36,11 @@ jobs:
       - name: Build CSS
         run: npm run build:css
 
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
+        with:
+          enablement: true
+
       - name: Assemble site
         run: |
           mkdir -p _site/dist
