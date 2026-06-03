@@ -18,6 +18,12 @@ screenshot*.png
 screenshot-final.png
 screenshot-latest.png
 
+# Chrome control skill runtime artifacts
+.chrome-profile/
+.chrome.pid
+chrome-shot.png
+page.pdf
+
 # Temporary files
 *.tmp
 *.temp
