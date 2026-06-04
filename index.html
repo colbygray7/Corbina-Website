@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://r2.leadsy.ai; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://r2.leadsy.ai; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://r2.leadsy.ai; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://r2.leadsy.ai; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -505,36 +505,31 @@
                 </div>
 
                 <!-- Right: Form -->
-                <form action="https://formsubmit.co/colby@corbinatech.com" method="POST" class="flex flex-col gap-5">
-                    <input type="hidden" name="_subject" value="New contact from Corbina website">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://corbinatech.com">
-                    <input type="text" name="_honey" style="display:none">
-
+                <form id="contactForm" class="flex flex-col gap-5">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div>
                             <label class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2 block">First Name</label>
-                            <input type="text" name="first_name" placeholder="Jane" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors">
+                            <input type="text" id="cf-first" placeholder="Jane" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors">
                         </div>
                         <div>
                             <label class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2 block">Last Name</label>
-                            <input type="text" name="last_name" placeholder="Doe" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors">
+                            <input type="text" id="cf-last" placeholder="Doe" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors">
                         </div>
                     </div>
 
                     <div>
                         <label class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2 block">Email</label>
-                        <input type="email" name="email" placeholder="jane@example.com" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors">
+                        <input type="email" id="cf-email" placeholder="jane@example.com" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors">
                     </div>
 
                     <div>
                         <label class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2 block">Phone (Optional)</label>
-                        <input type="tel" name="phone" placeholder="(555) 000-0000" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors">
+                        <input type="tel" id="cf-phone" placeholder="(555) 000-0000" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors">
                     </div>
 
                     <div>
                         <label class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2 block">Message</label>
-                        <textarea name="message" rows="4" placeholder="Tell us about your agency and what you'd like to automate..." required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors resize-none"></textarea>
+                        <textarea id="cf-message" rows="4" placeholder="Tell us about your agency and what you'd like to automate..." required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors resize-none"></textarea>
                     </div>
 
                     <button type="submit" class="btn-orange text-white py-4 rounded-xl font-bold text-base uppercase tracking-wider transition-colors mt-1">
@@ -595,6 +590,27 @@
                     toggleFaq(this);
                 });
             });
+
+            // Contact form mailto handler
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const first = document.getElementById('cf-first').value.trim();
+                    const last = document.getElementById('cf-last').value.trim();
+                    const email = document.getElementById('cf-email').value.trim();
+                    const phone = document.getElementById('cf-phone').value.trim();
+                    const message = document.getElementById('cf-message').value.trim();
+                    const subject = encodeURIComponent('New inquiry from ' + first + ' ' + last);
+                    const body = encodeURIComponent(
+                        'Name: ' + first + ' ' + last + '\n' +
+                        'Email: ' + email + '\n' +
+                        (phone ? 'Phone: ' + phone + '\n' : '') +
+                        '\nMessage:\n' + message
+                    );
+                    window.location.href = 'mailto:colby@corbinatech.com?subject=' + subject + '&body=' + body;
+                });
+            }
         });
 
         function toggleMenu() {
