@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://r2.leadsy.ai; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://r2.leadsy.ai; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js" data-pid="1cw6FfC6s20L5Ntkd" data-version="062024"></script>
     <style>
         .btn-orange { background-color: #f97316; }
         .btn-orange:hover { background-color: #ea6c0a; }
@@ -25,7 +26,8 @@
     <!-- Hero Section -->
     <section class="hero-bg min-h-screen flex flex-col rounded-none md:rounded-[2.5rem] mx-0 md:mx-4 my-0 md:my-4 overflow-hidden relative">
 
-        <!-- Hero background -->
+        <!-- Coral reef background (fish, no divers) -->
+        <div id="reef-bg"></div>
         <div id="reef-overlay"></div>
 
         <!-- Navigation -->
@@ -54,7 +56,7 @@
             <!-- Desktop CTA -->
             <div class="hidden md:flex items-center gap-4">
                 <a href="#faqs" class="text-white hover:text-zinc-300 text-sm lg:text-base font-medium">FAQs</a>
-                <a href="#" class="btn-orange text-white px-4 lg:px-6 py-2 lg:py-3 rounded-full font-medium transition-colors text-sm lg:text-base">Book a demo</a>
+                <a href="#contact" class="btn-orange text-white px-4 lg:px-6 py-2 lg:py-3 rounded-full font-medium transition-colors text-sm lg:text-base">Contact</a>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -74,7 +76,7 @@
             <a href="#founder" class="text-white hover:text-zinc-300 py-2">Founder</a>
             <a href="#faqs" class="text-white hover:text-zinc-300 py-2">FAQs</a>
             <div class="border-t border-zinc-600 pt-4 mt-2 flex flex-col gap-3">
-                <a href="#" class="btn-orange text-white px-6 py-3 rounded-full font-medium transition-colors text-center">Book a demo</a>
+                <a href="#contact" class="btn-orange text-white px-6 py-3 rounded-full font-medium transition-colors text-center">Contact</a>
             </div>
         </div>
 
@@ -95,8 +97,8 @@
             </p>
 
             <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
-                <a href="#" class="btn-orange text-white px-7 md:px-8 py-3.5 md:py-4 rounded-full font-semibold text-base md:text-lg inline-flex items-center gap-2 transition-colors">
-                    Book a demo
+                <a href="#contact" class="btn-orange text-white px-7 md:px-8 py-3.5 md:py-4 rounded-full font-semibold text-base md:text-lg inline-flex items-center gap-2 transition-colors">
+                    Get in touch
                     <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                     </svg>
@@ -480,17 +482,66 @@
         </div>
     </section>
 
-    <!-- Footer CTA -->
-    <section class="bg-zinc-800 py-16 px-4">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-white text-3xl md:text-4xl font-extrabold mb-4">Ready to automate your agency?</h2>
-            <p class="text-zinc-400 text-lg mb-8">Join the agencies running leaner with Corbina. Book a demo and we'll map your first automation live.</p>
-            <a href="#" class="btn-orange text-white px-8 py-4 rounded-full font-bold text-lg inline-flex items-center gap-2 transition-colors">
-                Book a demo
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                </svg>
-            </a>
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="bg-zinc-800 py-20 md:py-28 px-4">
+        <div class="max-w-6xl mx-auto section-reveal">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                <!-- Left: Info -->
+                <div>
+                    <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3 block">Get In Touch</span>
+                    <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold mb-5 leading-tight">Let's Automate Your Agency</h2>
+                    <p class="text-zinc-400 leading-relaxed mb-10 text-lg">Whether you're looking to streamline operations, scale without adding headcount, or simply explore what's possible — reach out. We'd love to connect.</p>
+
+                    <div class="flex flex-col gap-5">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-zinc-700 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <span class="text-white font-medium">colby@corbinatech.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <form action="https://formsubmit.co/colby@corbinatech.com" method="POST" class="flex flex-col gap-5">
+                    <input type="hidden" name="_subject" value="New contact from Corbina website">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://corbinatech.com">
+                    <input type="text" name="_honey" style="display:none">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2 block">First Name</label>
+                            <input type="text" name="first_name" placeholder="Jane" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors">
+                        </div>
+                        <div>
+                            <label class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2 block">Last Name</label>
+                            <input type="text" name="last_name" placeholder="Doe" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2 block">Email</label>
+                        <input type="email" name="email" placeholder="jane@example.com" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors">
+                    </div>
+
+                    <div>
+                        <label class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2 block">Phone (Optional)</label>
+                        <input type="tel" name="phone" placeholder="(555) 000-0000" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors">
+                    </div>
+
+                    <div>
+                        <label class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2 block">Message</label>
+                        <textarea name="message" rows="4" placeholder="Tell us about your agency and what you'd like to automate..." required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3.5 text-white placeholder-zinc-500 focus:outline-none focus:border-brand-blue transition-colors resize-none"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-orange text-white py-4 rounded-xl font-bold text-base uppercase tracking-wider transition-colors mt-1">
+                        Send Message
+                    </button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -513,6 +564,7 @@
                 <a href="#solutions" class="hover:text-white transition-colors">Solutions</a>
                 <a href="#founder" class="hover:text-white transition-colors">Founder</a>
                 <a href="#faqs" class="hover:text-white transition-colors">FAQs</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
             </div>
             <div class="text-zinc-600 text-sm">© 2026 Corbina. All rights reserved.</div>
         </div>
