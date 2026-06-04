@@ -18,15 +18,26 @@ h1, h2, h3, .brand-font {
   overflow: hidden;
 }
 
+/* Coral reef hero background */
+#reef-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url('https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 #reef-overlay {
   position: absolute;
   inset: 0;
   z-index: 0;
   background: linear-gradient(180deg,
-    #0a1f3a 0%,
-    #0d1b2e 40%,
-    #091422 80%,
-    #060e18 100%);
+    rgba(4, 20, 42, 0.45) 0%,
+    rgba(4, 18, 38, 0.40) 35%,
+    rgba(3, 12, 28, 0.70) 80%,
+    rgba(2, 8, 20, 0.85) 100%);
 }
 
 .content-layer {
