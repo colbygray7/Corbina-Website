@@ -19,13 +19,11 @@ node screenshot.js   # Take a 1920x1080 screenshot → screenshot-latest.png
 
 ## Architecture
 
-Static site with two pages, deployed to GitHub Pages by `.github/workflows/deploy.yml`:
+Static site deployed to GitHub Pages by `.github/workflows/deploy.yml`:
 
-- **`index.html`** — the main site: a retro poster design (smoking trout, live canvas smoke simulation). Fully self-contained: bespoke CSS, fonts embedded as base64 woff2, no Tailwind, no external requests.
-- **`classic/index.html`** — the previous design, kept reachable at `/classic/`. Uses the Tailwind pipeline: `src/input.css` → Tailwind CLI → `dist/output.css` (absolute path `/dist/output.css`).
+- **`index.html`** — the production site: a retro poster design (smoking trout, live canvas smoke simulation). Fully self-contained: bespoke CSS, fonts embedded as base64 woff2, no Tailwind, no external requests.
 - **Screenshots**: `screenshot.js` uses Puppeteer at 1920×1080 viewport, saves to `screenshot-latest.png`
-- **Tailwind config**: `tailwind.config.js` scans only `classic/index.html` — the root page doesn't use Tailwind
-- **Deploy**: the workflow's "Assemble site" step copies files explicitly (`index.html`, `dist/`, `assets/`, `classic/`, `artsy/`, `CNAME`) — new top-level files/dirs must be added there or they won't deploy
+- **Deploy**: the workflow's "Assemble site" step copies files explicitly (`index.html`, `dist/`, `assets/`, `artsy/`, `CNAME`) — new top-level files/dirs must be added there or they won't deploy
 
 ## Design Recreation Workflow
 

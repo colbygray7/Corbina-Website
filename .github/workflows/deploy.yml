@@ -44,8 +44,7 @@ jobs:
           cp CNAME _site/
           # Copy static assets (founder photo, etc.) if present
           if [ -d assets ]; then cp -r assets _site/; fi
-          # Classic site (previous design) and the /artsy/ redirect
-          if [ -d classic ]; then cp -r classic _site/; fi
+          # The /artsy/ redirect
           if [ -d artsy ]; then cp -r artsy _site/; fi
 
       - name: Upload Pages artifact
